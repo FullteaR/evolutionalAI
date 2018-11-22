@@ -2,13 +2,13 @@ import random
 import copy
 import numpy as np
 
-GENOM_LENGTH = 10
+GENOM_LENGTH = 100
 MAX_GENOM_LIST = 10000
 SELECT_GENOM = 2000
 INDIVIDUAL_MUTATION = 0.1  # 個体に突然変異が起きる確率を表す
 GENOM_MUTATION = 0.1  # 突然変異が起きた個体について、各々の遺伝子が変異する確率を表す
 MAX_ITER = 5000
-ATGC = [i for i in range(10)]
+ATGC = [i for i in range(100)]
 
 
 class Gene:
@@ -31,7 +31,7 @@ class Ecoli:
 
     def evaluate(self):
         chromosome_np = np.asarray(self.gene.chromosome)
-        return 1 / (np.sum((chromosome_np - np.arange(10))**2)+1e-5)#連番
+        return 1 / (np.sum((chromosome_np - np.arange(100))**2)+1e-5)#連番
 
     def mutate(self, force=False):
         if force or random.random() < INDIVIDUAL_MUTATION:
