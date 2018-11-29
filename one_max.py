@@ -31,7 +31,7 @@ class Ecoli:
 
     def evaluate(self):
         chromosome_np = np.asarray(self.gene.chromosome)
-        return 1 / (np.sum((chromosome_np - np.arange(100))**2)+1e-5)#連番
+        return 1 / (np.sum((chromosome_np - 1)**2)+1e-5)#すべて1
 
     def mutate(self, force=False):
         if force or random.random() < INDIVIDUAL_MUTATION:
