@@ -3890,3 +3890,7 @@ JavaScript error: https://unpkg.com/react-dom/umd/react-dom.production.min.js, l
 JavaScript error: http://0.0.0.0:8080/bundle.js, line 287: ReferenceError: ReactDOM is not defined
 JavaScript error: https://statcounter.com/counter/counter_xhtml.js, line 1: ReferenceError: sc_project is not defined
 JavaScript error: file:///Users/rikutamba/Desktop/infovis/B_mumei/QRA-Furuta/japan.html, line 23: ReferenceError: JapanPopulationData is not defined
+1543434467024	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/j_/kszjl7w562sg2dw3b6_pkm240000gn/T/rust_mozprofile.VeSnNlKYf6w4"
+*** You are running in headless mode.
+1543434472488	Marionette	INFO	Listening on port 63370
+1543434472520	Marionette	WARN	TLS certificate errors will be ignored for this session

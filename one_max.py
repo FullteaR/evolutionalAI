@@ -54,10 +54,6 @@ def crossOver(Ecoli1, Ecoli2, i=None, j=None):
     return Ecoli1, Ecoli2
 
 
-pool = [Ecoli() for i in range(MAX_GENOM_LIST)]
-best = pool[0]
-highScore = 0
-
 
 def nextGeneration(pool):
     newPool = []
@@ -73,6 +69,10 @@ def nextGeneration(pool):
 def selectEcols(pool):
     pool = sorted(pool, key=lambda x: -x.evaluate())
     return pool[:SELECT_GENOM:]
+
+pool = [Ecoli() for i in range(MAX_GENOM_LIST)]
+best = pool[0]
+highScore = 0
 
 
 for epoch in range(MAX_ITER):
